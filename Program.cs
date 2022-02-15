@@ -11,7 +11,8 @@ namespace AlgorithmPrograms
             "\n 2. Bubble sort"+
             "\n 3. Insertion Sort"+
             "\n 4. Anagram Detection"+
-            "\n 5. Exit");
+            "\n 5. Prime Number"+
+            "\n 6. Exit");
 
             int option = Convert.ToInt32(Console.ReadLine());
             
@@ -38,6 +39,10 @@ namespace AlgorithmPrograms
                     detect.AnagramDetection();
                     break;
                 case 5:
+                    PrimeNumber prime = new PrimeNumber();
+                    prime.PrimeLogic();
+                    break;
+                case 6:
                     break;
                 default:
                     System.Console.WriteLine("Choose correct option");
