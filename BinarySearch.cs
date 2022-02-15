@@ -55,16 +55,6 @@ namespace AlgorithmPrograms
                 System.Console.WriteLine("String found");
             }
 
-           
-
-            // for (int i = 0; i <= mid; i++)
-            // {
-            //     if (strInputArray[i].Equals(userInput))
-            //     {
-            //         System.Console.WriteLine("String found!!");
-            //     }
-                
-            // } 
         } 
     }
     
