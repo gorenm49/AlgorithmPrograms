@@ -10,7 +10,8 @@ namespace AlgorithmPrograms
             "\n 1. Binary search"+
             "\n 2. Bubble sort"+
             "\n 3. Insertion Sort"+
-            "\n 4.Exit");
+            "\n 4. Anagram Detection"+
+            "\n 5. Exit");
 
             int option = Convert.ToInt32(Console.ReadLine());
             
@@ -33,6 +34,10 @@ namespace AlgorithmPrograms
                     sort.InsertionSortMethod();
                     break;
                 case 4:
+                    Anagram detect = new Anagram();
+                    detect.AnagramDetection();
+                    break;
+                case 5:
                     break;
                 default:
                     System.Console.WriteLine("Choose correct option");
