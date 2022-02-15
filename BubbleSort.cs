@@ -9,6 +9,12 @@ namespace AlgorithmPrograms
 
             int[] InputArray = { 97, 55, 45, 88, 21 };
             int temp;
+
+            System.Console.WriteLine("Array before Sort: ");
+            for (int i = 0; i <InputArray.Length; i++) 
+            {
+                System.Console.Write(InputArray[i]+" ");
+            }
             
             for (int j = 0; j <= InputArray.Length - 2; j++)
             {
@@ -22,7 +28,7 @@ namespace AlgorithmPrograms
                     }
                 }
             }
-            Console.WriteLine("Sorted Array is:");
+            Console.WriteLine("\nSorted Array is:");
             
             foreach (int data in InputArray)
             {
