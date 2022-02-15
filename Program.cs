@@ -5,13 +5,12 @@ namespace AlgorithmPrograms
     public class Program
     {
         public static void Main(string[] args)
-        {
-            
-            
+        {           
             System.Console.WriteLine("Welcome to Algorithm Programs :  \n Choose operation :"+
             "\n 1. Binary search"+
             "\n 2. Bubble sort"+
-            "\n 3. Exit");
+            "\n 3. Insertion Sort"+
+            "\n 4.Exit");
 
             int option = Convert.ToInt32(Console.ReadLine());
             
@@ -30,6 +29,10 @@ namespace AlgorithmPrograms
                     bubble.Bubble();    
                     break;
                 case 3:
+                    InsertionSort sort = new InsertionSort();
+                    sort.InsertionSortMethod();
+                    break;
+                case 4:
                     break;
                 default:
                     System.Console.WriteLine("Choose correct option");
