@@ -6,13 +6,17 @@ namespace AlgorithmPrograms
     {
         public static void Main(string[] args)
         {
-            BinarySearch b = new BinarySearch();         
+            // BinarySearch b = new BinarySearch();         
 
-            System.Console.WriteLine("Enter string value to search:");
-            string userInput = Console.ReadLine();
+            // System.Console.WriteLine("Enter string value to search:");
+            // string userInput = Console.ReadLine();
 
-            System.Console.WriteLine("User input is :"+userInput);
-            b.BinarySearchIterative(userInput);
+            // System.Console.WriteLine("User input is :"+userInput);
+            // b.BinarySearchIterative(userInput);
+
+            BubbleSort bubble = new BubbleSort();
+            bubble.Bubble();
+
 
 
         }
