@@ -7,26 +7,26 @@ namespace AlgorithmPrograms
         public void Bubble()
         {
 
-            int[] arr = { 97, 55, 45, 88, 21 };
+            int[] InputArray = { 97, 55, 45, 88, 21 };
             int temp;
             
-            for (int j = 0; j <= arr.Length - 2; j++)
+            for (int j = 0; j <= InputArray.Length - 2; j++)
             {
-                for (int i = 0; i <= arr.Length - 2; i++) 
+                for (int i = 0; i <= InputArray.Length - 2; i++) 
                 {
-                    if (arr[i] > arr[i + 1]) 
+                    if (InputArray[i] > InputArray[i + 1]) 
                     {
-                        temp= arr[i + 1];
-                        arr[i + 1] = arr[i];
-                        arr[i] = temp;
+                        temp= InputArray[i + 1];
+                        InputArray[i + 1] = InputArray[i];
+                        InputArray[i] = temp;
                     }
                 }
             }
             Console.WriteLine("Sorted Array is:");
             
-            foreach (int p in arr)
+            foreach (int data in InputArray)
             {
-                Console.Write(p + " ");
+                Console.Write(data + " ");
             }
             
         }
