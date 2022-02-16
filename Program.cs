@@ -12,7 +12,8 @@ namespace AlgorithmPrograms
             "\n 3. Insertion Sort"+
             "\n 4. Anagram Detection"+
             "\n 5. Prime Number"+
-            "\n 6. Exit");
+            "\n 6. Merge Sort"+
+            "\n 7. Exit");
 
             int option = Convert.ToInt32(Console.ReadLine());
             
@@ -43,6 +44,16 @@ namespace AlgorithmPrograms
                     prime.PrimeLogic();
                     break;
                 case 6:
+                    MergeSort merge = new MergeSort();
+                    int[] arrPass = {78, 99, 12, 65, 100, 76, 89, 23, 1, 55};
+                    int len = Convert.ToInt32(arrPass.Length);
+                    merge.mergeSort(arrPass,0,len-1);
+                    for (int i = 0; i < arrPass.Length; i++) 
+                    {
+                          Console.Write(arrPass[i] + " ");
+                    }
+                    break;
+                case 7:
                     break;
                 default:
                     System.Console.WriteLine("Choose correct option");
